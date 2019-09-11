@@ -28,7 +28,7 @@ public class Storage {
      * @throws DukeException if there is an issue in writing to hard disk.
      */
     public void save(TaskList tasks) throws DukeException {
-        assert (new File(storagePath)).exists() : "Storage file no longer exist.";
+        assert (new File(storagePath)).getParentFile().exists() : "Storage file no longer exist.";
 
         try (FileWriter writer = new FileWriter(storagePath)) {
             writer.write(tasks.printTasksForHardDisk());
