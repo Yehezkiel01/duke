@@ -65,7 +65,7 @@ public class Storage {
             case "D":
                 task = new Deadline(datas[2], datas[3]);
                 break;
-            case "T":
+            case Todo.symbol:
                 task = new Todo(datas[2]);
                 break;
             default:
