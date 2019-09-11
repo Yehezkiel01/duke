@@ -1,6 +1,8 @@
 import java.util.Date;
 
 public class Deadline extends Task {
+    public static final String symbol = "D";
+
     protected Date by;
 
     public Deadline(String description, String by) throws DukeException {
@@ -13,7 +15,7 @@ public class Deadline extends Task {
         assert by != null : "Deadline date should exist.";
 
         String[] datas = new String[4];
-        datas[0] = "D";
+        datas[0] = Deadline.symbol;
         datas[1] = isDone ? "1" : "0";
         datas[2] = description;
         datas[3] = dateToStringForHardDisk(by);
@@ -25,6 +27,6 @@ public class Deadline extends Task {
     public String toString() {
         assert by != null : "Deadline date should exist.";
 
-        return "[D]" + super.toString() + " (by: " + by + ")";
+        return "[" + Deadline.symbol + "]" + super.toString() + " (by: " + by + ")";
     }
 }

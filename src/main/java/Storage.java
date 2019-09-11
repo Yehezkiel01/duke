@@ -62,7 +62,7 @@ public class Storage {
             case "E":
                 task = new Event(datas[2], datas[3]);
                 break;
-            case "D":
+            case Deadline.symbol:
                 task = new Deadline(datas[2], datas[3]);
                 break;
             case Todo.symbol:
