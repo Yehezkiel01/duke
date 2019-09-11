@@ -10,6 +10,8 @@ public class Deadline extends Task {
 
     @Override
     public String toStringForHardDisk() {
+        assert by != null : "Deadline date should exist.";
+
         String[] datas = new String[4];
         datas[0] = "D";
         datas[1] = isDone ? "1" : "0";
@@ -21,6 +23,8 @@ public class Deadline extends Task {
 
     @Override
     public String toString() {
+        assert by != null : "Deadline date should exist.";
+
         return "[D]" + super.toString() + " (by: " + by + ")";
     }
 }
