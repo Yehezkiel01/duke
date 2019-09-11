@@ -12,7 +12,7 @@ public class Event extends Task {
 
     @Override
     public String toStringForHardDisk() {
-        assert at!= null : "Event date should exist.";
+        assert at != null : "Event date should exist.";
 
         String[] datas = new String[4];
         datas[0] = Event.symbol;
@@ -25,7 +25,7 @@ public class Event extends Task {
 
     @Override
     public String toString() {
-        assert at!= null : "Event date should exist.";
+        assert at != null : "Event date should exist.";
 
         return "[" + Event.symbol + "]" + super.toString() + " (at: " + at + ")";
     }
