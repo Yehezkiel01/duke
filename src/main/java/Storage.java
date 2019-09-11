@@ -59,7 +59,7 @@ public class Storage {
 
             Task task;
             switch (datas[0]) {
-            case "E":
+            case Event.symbol:
                 task = new Event(datas[2], datas[3]);
                 break;
             case Deadline.symbol:
