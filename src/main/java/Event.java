@@ -1,11 +1,11 @@
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Event extends Task {
     public static final String symbol = "E";
 
-    protected Date at;
+    protected LocalDateTime at;
 
-    public Event(String description, String at) throws DukeException {
+    public Event(String description, String at) {
         super(description);
         this.at = parseDate(at);
     }
