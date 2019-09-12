@@ -20,6 +20,10 @@ public abstract class Task {
         return (isDone ? "\u2713" : "\u2718"); //return tick or X symbols
     }
 
+    public boolean getIsDone() {
+        return isDone;
+    }
+
     /**
      * Marks this task as done.
      */

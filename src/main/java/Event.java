@@ -10,6 +10,10 @@ public class Event extends Task {
         this.at = parseDate(at);
     }
 
+    public LocalDateTime getAt() {
+        return at;
+    }
+
     @Override
     public String toStringForHardDisk() {
         assert at != null : "Event date should exist.";

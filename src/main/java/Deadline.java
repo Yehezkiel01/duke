@@ -10,6 +10,10 @@ public class Deadline extends Task {
         this.by = parseDate(by);
     }
 
+    public LocalDateTime getBy() {
+        return by;
+    }
+
     @Override
     public String toStringForHardDisk() {
         assert by != null : "Deadline date should exist.";
