@@ -8,6 +8,7 @@ public class ReminderCommand extends Command {
     }
 
     private static final int limit = 3;
+
     /**
      * Selects several tasks which are closest to their date of event or deadline.
      */
