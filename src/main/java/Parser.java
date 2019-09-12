@@ -13,6 +13,8 @@ public class Parser {
             return new ByeCommand();
         } else if (command.equals("list")) {
             return new ListCommand();
+        } else if (command.equals("reminder")) {
+            return new ReminderCommand();
         } else if (command.matches("^done \\d+$")) {
             return parseDoneCommand(command);
         } else if (command.matches("^delete \\d+$")) {
